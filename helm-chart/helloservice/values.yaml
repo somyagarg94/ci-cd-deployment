@@ -1,0 +1,16 @@
+name: helloservice
+
+image:
+  repository: quay.io
+  name: somyagarg1994/helloservice
+  tag: 1.1.1
+  pullPolicy: IfNotPresent
+
+replicas: 1
+
+serviceType: LoadBalancer
+
+nodeSelector: {}
+
+ingress:
+  hostname: helloservice.example.com
